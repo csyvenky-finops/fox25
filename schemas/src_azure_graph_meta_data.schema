@@ -1,0 +1,89 @@
+[
+    {
+        "id": "/subscriptions/a18d38bf-xxxx-xxxx-xxxx-2d20xxxx/resourceGroups/azure_data_engineer/providers/Microsoft.Databricks/workspaces/databricks",
+        "name": "databricks",
+        "type": "microsoft.databricks/workspaces",
+        "tenantId": "[REDACTED]",
+        "kind": "",
+        "location": "westus",
+        "resourceGroup": "azure_data_engineer",
+        "subscriptionId": "a18d38bf-xxxx-xxxx-xxxx-2d20xxxx",
+        "managedBy": "",
+        "sku": {
+            "name": "trial"
+        },
+        "plan": null,
+        "properties": {
+            "provisioningState": "Succeeded",
+            "publicNetworkAccess": "Enabled",
+            "parameters": {
+                "requireInfrastructureEncryption": {
+                    "type": "Bool",
+                    "value": false
+                },
+                "storageAccountName": {
+                    "type": "String",
+                    "value": "dbstorageob2chalp6z5eu"
+                },
+                "enableFedRampCertification": {
+                    "type": "Bool",
+                    "value": false
+                },
+                "storageAccountSkuName": {
+                    "type": "String",
+                    "value": "Standard_GRS"
+                },
+                "prepareEncryption": {
+                    "type": "Bool",
+                    "value": false
+                },
+                "customPrivateSubnetName": {
+                    "type": "String",
+                    "value": "db_private"
+                },
+                "enableNoPublicIp": {
+                    "type": "Bool",
+                    "value": true
+                },
+                "customPublicSubnetName": {
+                    "type": "String",
+                    "value": "db_public"
+                },
+                "customVirtualNetworkId": {
+                    "type": "String",
+                    "value": "/subscriptions/a18d38bf-xxxx-xxxx-xxxx-2d20xxxx/resourceGroups/azure_data_engineer/providers/Microsoft.Network/virtualNetworks/vnet"
+                },
+                "resourceTags": {
+                    "type": "Object",
+                    "value": {
+                        "databricks-environment": "true",
+                        "application": "databricks"
+                    }
+                }
+            },
+            "workspaceId": "1292345398015491",
+            "managedResourceGroupId": "/subscriptions/a18d38bf-xxxx-xxxx-xxxx-2d20xxxx/resourceGroups/azure_data_engineer_db_cluster",
+            "authorizations": [
+                {
+                    "principalId": "9a74af6f-d153-4348-988a-e2672920bee9",
+                    "roleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635"
+                }
+            ],
+            "createdBy": {
+                "applicationId": "06a39d4c-adbe-42cd-991d-17d758d5e836",
+                "oid": "3696833c-7757-47b2-9872-81adabc1b686"
+            },
+            "createdDateTime": "2025-02-17T20:36:45.3767303Z",
+            "workspaceUrl": "adb-1292345398015491.11.azuredatabricks.net",
+            "isUcEnabled": false,
+            "updatedBy": {
+                "applicationId": "06a39d4c-adbe-42cd-991d-17d758d5e836",
+                "oid": "3696833c-7757-47b2-9872-81adabc1b686"
+            }
+        },
+        "tags": {},
+        "identity": null,
+        "zones": null,
+        "extendedLocation": null
+    }
+]

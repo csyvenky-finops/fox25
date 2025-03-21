@@ -1,0 +1,22 @@
+[Azure Databricks Billing Documentation](https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/billing)
+
+| Column name            | Data type | Description                                                                                          | Example                                                                 |
+|------------------------|-----------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| record_id              | string    | Unique ID for this usage record                                                                      | 11e22ba4-87b9-4cc2-9770-d10b894b7118                                   |
+| account_id             | string    | ID of the account this report was generated for                                                     | 23e22ba4-87b9-4cc2-9770-d10b894b7118                                   |
+| workspace_id           | string    | ID of the workspace this usage was associated with                                                  | 1234567890123456                                                       |
+| sku_name               | string    | Name of the SKU                                                                                     | STANDARD_ALL_PURPOSE_COMPUTE                                           |
+| cloud                  | string    | Cloud associated with this usage (AWS, AZURE, GCP)                                                 | AWS                                                                    |
+| usage_start_time       | timestamp | Start time of this usage record in UTC                                                              | 2023-01-09 10:00:00.000+00:00                                          |
+| usage_end_time         | timestamp | End time of this usage record in UTC                                                                | 2023-01-09 11:00:00.000+00:00                                          |
+| usage_date             | date      | Date of the usage record for faster aggregation                                                     | 2023-01-01                                                             |
+| custom_tags            | map       | Custom tags associated with the usage record                                                       | { "env": "production" }                                                |
+| usage_unit             | string    | Unit this usage is measured in                                                                      | DBU                                                                    |
+| usage_quantity         | decimal   | Number of units consumed for this record                                                           | 259.2958                                                               |
+| usage_metadata         | struct    | Metadata about the usage, including IDs for compute resources and jobs                              | { cluster_id: null, job_id: null }                                     |
+| identity_metadata      | struct    | Metadata about the identities involved in the usage                                                | Refer to Identity Metadata                                             |
+| record_type            | string    | Whether the record is ORIGINAL, RETRACTION, or RESTATEMENT                                         | ORIGINAL                                                               |
+| ingestion_date         | date      | Date the record was ingested into the usage table                                                  | 2024-01-01                                                             |
+| billing_origin_product | string    | Product that originated the usage                                                                  | JOBS                                                                   |
+| product_features       | struct    | Details about the specific product features used                                                   | See Product Features                                                   |
+| usage_type             | string    | Type of usage for billing purposes (e.g., COMPUTE_TIME, STORAGE_SPACE, NETWORK_BYTES, etc.)         | STORAGE_SPACE                                                          |
