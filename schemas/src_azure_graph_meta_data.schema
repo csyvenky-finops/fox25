@@ -66,19 +66,19 @@
             "authorizations": [
                 {
                     "principalId": "9a74af6f-d153-4348-988a-e2672920bee9",
-                    "roleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635"
+                    "roleDefinitionId": "8e3af657-xxxx-xxxx-xxxx-2fe8c4bcb635"
                 }
             ],
             "createdBy": {
                 "applicationId": "06a39d4c-adbe-42cd-991d-17d758d5e836",
-                "oid": "3696833c-7757-47b2-9872-81adabc1b686"
+                "oid": "3696833c-7757-xxxx-xxxx-81adabc1b686"
             },
             "createdDateTime": "2025-02-17T20:36:45.3767303Z",
-            "workspaceUrl": "adb-1292345398015491.11.azuredatabricks.net",
+            "workspaceUrl": "adb-1292345xxxx15491.11.azuredatabricks.net",
             "isUcEnabled": false,
             "updatedBy": {
-                "applicationId": "06a39d4c-adbe-42cd-991d-17d758d5e836",
-                "oid": "3696833c-7757-47b2-9872-81adabc1b686"
+                "applicationId": "06a39d4c-xxxx-xxxx-xxxx-17d758d5e836",
+                "oid": "3696833c-7757-xxxx-xxxx-81adabc1b686"
             }
         },
         "tags": {},
