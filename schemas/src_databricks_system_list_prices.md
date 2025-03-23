@@ -1,0 +1,12 @@
+[Azure Databricks Pricing Documentation](https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/pricing)
+
+| Column name      | Data type | Description                                                                                     | Example                                                                 |
+|------------------|-----------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| price_start_time | timestamp | The time this price became effective in UTC.                                                   | 2023-01-01T09:59:59.999Z                                               |
+| price_end_time   | timestamp | The time this price stopped being effective in UTC.                                            | 2023-01-01T09:59:59.999Z                                               |
+| account_id       | string    | ID of the account this report was generated for.                                               | 1234567890123456                                                       |
+| sku_name         | string    | Name of the SKU.                                                                               | STANDARD_ALL_PURPOSE_COMPUTE                                           |
+| cloud            | string    | Name of the Cloud this price is applicable to (AWS, AZURE, GCP).                               | AWS                                                                    |
+| currency_code    | string    | The currency this price is expressed in.                                                       | USD                                                                    |
+| usage_unit       | string    | The unit of measurement that is monetized.                                                     | DBU                                                                    |
+| pricing          | struct    | Pricing info including "default", "promotional", and "effective_list" rates.                   | { "default": "0.10", "promotional": { "default": "0.07" }, "effective_list": { "default": "0.07" } }         |
