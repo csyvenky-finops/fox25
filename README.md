@@ -4,4 +4,4 @@
 
 - [Event Agenda](https://x.finops.org/agenda-2025/)
 - [Session Details](https://x.finops.org/agenda/transforming-databricks-cost-management-data-into-the-focus-format-a-practical-guide/)
-- Session Recording - to be added after the event.
+- [Session Recording](https://www.youtube.com/watch?v=UW9KaPIqI2w)
